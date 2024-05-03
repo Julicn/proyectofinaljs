@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verona</title>
+    <link rel="stylesheet" href="./css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body onload="controlarSesion();">
+    <!--navbar-->
+    <div class="nav-container">
+        <nav class="navbar">
+            <a href="index.html"><h1 class="navbar-logo">Store</h1></a>
+            <a href="#"><h1>Inicio Sesión</h1></a>
+            <h1 class="ver-carrito" id="verCarrito">🛒<span id="cantidadCarrito" class="cantidad-carrito"></span></h1>
+        </nav>
+    </div>
+    <div class="container">
+        <div class="textoCentrado">
+            <img src="../assets/imagenes/b1ec4b168d272d0c7ed11274de912a2a.jpg" class="mt-5" width="200px" alt="">
+            <h3 class="mt-3">Iniciar Sesión</h3>
+            <form id="formInicio">
+                <div class="mb-3">
+                    <label for="correo" class="form-label mt-5">Correo Electrónico</label>
+                    <input type="email" class="form-control" id="correo" placeholder="name@example.com">
+                  </div>
+                  <div class="mb-3">
+                    <label for="password" class="form-label">Contraseña</label>
+                    <input type="password" class="form-control" id="password">
+                  </div>
+                  <div class="mb-3">
+                    <input type="button" class="btn btn-primary form-control" onclick="loginUsuario()" value="Iniciar Sesión">
+                </div>
+                <div class="mb-3">
+                    <a href="crearusuario.html" class="btn btn-secondary form-control">Crear Usuario</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="js/funciones.js"></script>
+    <script src="js/carrito.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/sweetalert2.all.min.js"></script>
+</body>
+</html>
